@@ -23,7 +23,7 @@ I will try to fix as many as possible but I am not really a coder, so yeah we wi
 - Regex builder for whitelist.
 - Pixelserv (NGINX) to replace 0.0.0.0.
 
-### Installing
+### Installing / Update
 
 Obviously, this is all done with the `Shell` mode via SSH.
 Do all these steps below in this order.
@@ -31,10 +31,18 @@ Do all these steps below in this order.
 ```
 opnsense-code tools plugins
 cd /usr/plugins/dns
-git clone https://github.com/alectrocute/UnboundBL.git
+git clone https://github.com/Technikte/UnboundBL.git
 cd UnboundBL
 make package
 pkg add work/pkg/*.txz
+chmod +x /usr/local/opnsense/scripts/OPNsense/Unboundbl/*.sh
+```
+
+```
+cd /usr/plugins/dns
+git clone https://github.com/Technikte/UnboundBL.git
+cd UnboundBL
+make upgrade
 chmod +x /usr/local/opnsense/scripts/OPNsense/Unboundbl/*.sh
 ```
 
