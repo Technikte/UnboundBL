@@ -10,12 +10,10 @@
         <blacklist type="CSVListField">
             <Required>N</Required>
             <multiple>Y</multiple>
-            <ChangeCase>lower</ChangeCase>
         </blacklist>
         <whitelist type="CSVListField">
             <Required>N</Required>
             <multiple>Y</multiple>
-            <ChangeCase>lower</ChangeCase>
         </whitelist>
     </items>
 </model>
